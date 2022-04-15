@@ -26,7 +26,18 @@ class HomeAdapter(var fragment: HomeFragment, var items: ArrayList<Post>) :BaseA
         val post:Post = items[position]
         if (holder is PostViewHolder) {
             var iv_post = holder.iv_post
+            var tv_fullname = holder.tv_fullname
+            var iv_profile = holder.iv_profile
+            var tv_caption = holder.tv_caption
+            var tv_time = holder.tv_time
 
+            tv_fullname.text = post.fullname
+            tv_caption.text = post.caption
+            tv_time.text = post.currentDate
+            Glide.with(fragment).load(post.userImg)
+                .placeholder(R.drawable.iv_profile)
+                .error(R.drawable.iv_profile)
+                .into(iv_profile)
             Glide.with(fragment).load(post.postImg).into(iv_post)
         }
     }

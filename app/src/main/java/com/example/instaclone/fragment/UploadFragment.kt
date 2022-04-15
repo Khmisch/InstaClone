@@ -129,6 +129,7 @@ class UploadFragment : BaseFragment() {
         StorageManager.uploadPostPhoto(uri, object : StorageHandler {
             override fun onSuccess(imgUrl: String) {
                 val post = Post(caption, imgUrl)
+                post.setCurrentTime()
                 val uid = AuthManager.currentUser()!!.uid
 
                 DatabaseManager.loadUser(uid, object : DBUserHandler {
