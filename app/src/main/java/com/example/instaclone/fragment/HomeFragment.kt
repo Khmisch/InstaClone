@@ -10,7 +10,11 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.instaclone.R
 import com.example.instaclone.adapter.HomeAdapter
+import com.example.instaclone.manager.AuthManager
+import com.example.instaclone.manager.DatabaseManager
+import com.example.instaclone.manager.handler.DBPostsHandler
 import com.example.instaclone.model.Post
+import java.lang.Exception
 import java.lang.RuntimeException
 
 class HomeFragment : BaseFragment() {
@@ -58,22 +62,28 @@ class HomeFragment : BaseFragment() {
             listener!!.scrollToUpload()
         }
 
-        refreshAdapter(loadPosts())
+        loadMyPosts()
+    }
+
+    private fun loadMyPosts() {
+        showLoading(requireActivity())
+        val uid = AuthManager.currentUser()!!.uid
+        DatabaseManager.loadFeeds(uid, object : DBPostsHandler {
+            override fun onSuccess(posts: ArrayList<Post>) {
+                dismissLoading()
+                refreshAdapter(posts)
+            }
+
+            override fun onError(exception: Exception) {
+                dismissLoading()
+            }
+        })
     }
 
     private fun refreshAdapter(items: ArrayList<Post>) {
         val adapter = HomeAdapter(this, items)
         recyclerView.adapter = adapter
     }
-
-    private fun loadPosts():ArrayList<Post> {
-        val items = ArrayList<Post>()
-//        items.add(Post("https://images.unsplash.com/photo-1649621036375-15c17ddbc5ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"))
-//        items.add(Post("https://images.unsplash.com/photo-1503301360699-4f60cf292ec8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"))
-//        items.add(Post("https://images.unsplash.com/photo-1570191913384-7b4ff11716e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"))
-        return items
-    }
-
 
     /**
      * This interface is created for communication with UploadFragment

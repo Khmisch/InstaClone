@@ -185,6 +185,7 @@ class UploadFragment : BaseFragment() {
     }
 
     private fun resetAll() {
+        allPhotos.clear()
         et_caption.text.clear()
         pickedPhoto = null
         fl_photo.visibility = View.GONE
