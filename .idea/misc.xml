@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/InstaClone/app/src/main/res/drawable-v24/loading_frame.xml" value="0.117" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/InstaClone/app/src/main/res/drawable-v24/view_rounded_corner.xml" value="0.117" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/InstaClone/app/src/main/res/drawable/app_main_gradient.xml" value="0.117" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/InstaClone/app/src/main/res/drawable/bottom_navigation_color_selector.xml" value="0.117" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/InstaClone/app/src/main/res/drawable/edittext_rounded_corners.xml" value="0.117" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/InstaClone/app/src/main/res/drawable/textview_rounded_corner.xml" value="0.117" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/InstaClone/app/src/main/res/drawable/view_following.xml" value="0.117" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/InstaClone/app/src/main/res/font/custom_font.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/InstaClone/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/InstaClone/app/src/main/res/layout/activity_sign_in.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/InstaClone/app/src/main/res/layout/activity_sign_up.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/InstaClone/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/InstaClone/app/src/main/res/layout/custom_progress_dialog.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/InstaClone/app/src/main/res/layout/fragment_favorite.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/InstaClone/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/InstaClone/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/InstaClone/app/src/main/res/layout/fragment_search.xml" value="0.21" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/InstaClone/app/src/main/res/layout/fragment_upload.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/InstaClone/app/src/main/res/layout/item_home_layout.xml" value="0.18854166666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/InstaClone/app/src/main/res/layout/item_post_favorite.xml" value="0.18854166666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/InstaClone/app/src/main/res/layout/item_post_profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/InstaClone/app/src/main/res/layout/item_user_search.xml" value="0.33" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/InstaClone/app/src/main/res/menu/navigation.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
